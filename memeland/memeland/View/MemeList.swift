@@ -8,13 +8,12 @@
 import SwiftUI
 
 struct MemeList: View {
-    let memes = decodeFromJsonFile(fileName: "memes.json")
+    let memes = decodeFromJsonTopicFile(fileName: "memes.json")
     var body: some View {
         List(memes) { meme in
-            NavigationLink(destination: MemeDetails(meme: meme)){
+            NavigationLink(destination: MemeDetails(memeTopic: meme)){
                 MemeRow(meme: meme)
             }
-            
         }.navigationTitle("Meme list").navigationBarTitleDisplayMode(.inline)
     }
 }
@@ -26,8 +25,8 @@ struct MemeList_Previews: PreviewProvider {
 }
 
 struct MemeRow: View{
-    var meme: Meme
+    var meme: MemeTopic
     var body: some View {
-        Text("\(meme.id): \(meme.title)")
+        Text("\(meme.title)")
     }
 }

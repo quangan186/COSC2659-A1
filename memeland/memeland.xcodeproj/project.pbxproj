@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E2E656228922E2000A63EE1 /* decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E656128922E2000A63EE1 /* decode.swift */; };
 		2E77E384288A9E100079FBDA /* Montserrat-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E77E372288A9E100079FBDA /* Montserrat-ThinItalic.ttf */; };
 		2E77E385288A9E100079FBDA /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E77E373288A9E100079FBDA /* Montserrat-Light.ttf */; };
 		2E77E386288A9E100079FBDA /* Montserrat-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2E77E374288A9E100079FBDA /* Montserrat-BoldItalic.ttf */; };
@@ -37,6 +38,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E2E656128922E2000A63EE1 /* decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = decode.swift; sourceTree = "<group>"; };
 		2E77E372288A9E100079FBDA /* Montserrat-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-ThinItalic.ttf"; path = "../../../../../../Downloads/Montserrat/static/Montserrat-ThinItalic.ttf"; sourceTree = "<group>"; };
 		2E77E373288A9E100079FBDA /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-Light.ttf"; path = "../../../../../../Downloads/Montserrat/static/Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		2E77E374288A9E100079FBDA /* Montserrat-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Montserrat-BoldItalic.ttf"; path = "../../../../../../Downloads/Montserrat/static/Montserrat-BoldItalic.ttf"; sourceTree = "<group>"; };
@@ -79,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2E2E656328922FAC00A63EE1 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				2E2E656128922E2000A63EE1 /* decode.swift */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
 		2E77E371288A9D890079FBDA /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		2EE1AB71288902A500B0291E /* memeland */ = {
 			isa = PBXGroup;
 			children = (
+				2E2E656328922FAC00A63EE1 /* utils */,
 				2E7F745C288D7F5600B1D7F6 /* Models */,
 				2E7F7456288D7DD000B1D7F6 /* Data */,
 				2E77E398288AC1140079FBDA /* Info.plist */,
@@ -259,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E2E656228922E2000A63EE1 /* decode.swift in Sources */,
 				2EE1AB75288902A500B0291E /* ContentView.swift in Sources */,
 				2E8A05C4288AC996003CD92C /* MemeDetails.swift in Sources */,
 				2E8B83BD288A8D2600C240E3 /* Home.swift in Sources */,
