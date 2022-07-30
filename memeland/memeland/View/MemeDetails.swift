@@ -10,7 +10,7 @@ import SwiftUI
 struct MemeDetails: View {
     var memeTopic: MemeTopic
  
-//    var memeItem = decodeFromJsonItemFile(fileName: "memeList.json")
+    
     var body: some View {
         ScrollView{
             VStack(spacing: 12){
@@ -21,6 +21,11 @@ struct MemeDetails: View {
                     return meme.topic == memeTopic.title}), id: \.memeId){ item in
                     Image(item.memeSrc).resizable().scaledToFill()
                         Text(item.note).font(.custom("Montserrat", size: 16))
+//                        Button("Download Template"){
+//                            let imageSaver = ImageSaver()
+//                            imageSaver.saveImage(image: item.memeSrc.convertStringtoImage()!)
+//                        }.padding().background(Color("lightBlue")).foregroundColor(.white).cornerRadius(15)
+                    
                 }
                     Spacer()
                 Button("Download all \(Image(systemName:"square.and.arrow.down"))"){

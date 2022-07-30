@@ -9,12 +9,21 @@ import SwiftUI
 
 struct MemeList: View {
     let memes = decodeFromJsonTopicFile(fileName: "memes.json")
+    @State private var searchTopic = ""
     var body: some View {
-        List(memes) { meme in
+        List(searchResults) { meme in
             NavigationLink(destination: MemeDetails(memeTopic: meme)){
                 MemeRow(meme: meme)
             }
-        }.navigationTitle("Meme list").navigationBarTitleDisplayMode(.inline)
+        }.searchable(text: $searchTopic, prompt: "Search").navigationTitle("Meme list").navigationBarTitleDisplayMode(.inline)
+    }
+    
+    var searchResults: [MemeTopic]{
+        if searchTopic.isEmpty {
+            return memes
+        }else{
+            return memes.filter({(item) -> Bool in return item.title == searchTopic})
+        }
     }
 }
 
