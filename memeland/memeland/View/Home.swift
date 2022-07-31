@@ -16,6 +16,10 @@ struct Home: View {
                             .font(.custom("Montserrat-Light", size: 32)).foregroundColor(Color.white).frame(maxWidth: .infinity)
 
                         Text("MemeLand").font(.custom("Montserrat-Bold", size: 48)).foregroundColor(Color.white).frame(maxWidth: .infinity).padding()
+                        
+                        Text("Find your favorite meme templates here")
+                            .font(.custom("Montserrat-Regular", size: 16)).fontWeight(.regular).foregroundColor(Color.white).frame(maxWidth: .infinity).padding(.vertical)
+                        
                         NavigationLink(destination: MemeList(), label: {
                             Text("Get started").font(.title3).fontWeight(.semibold).padding([.top, .leading, .bottom])
                             Image(systemName: "arrow.right")

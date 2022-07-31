@@ -3,13 +3,14 @@
         "id": 1,
         "title": "The Boys",
         "imgSrc": "theBoys",
-        "description": "The Boys is an American dark superhero television series developed by Eric Kripke for Amazon Prime Video. Based on the comic book of the same name by Garth Ennis and Darick Robertson, it follows the eponymous team of vigilantes as they combat superpowered individuals who abuse their abilities. The series features an ensemble cast that includes Karl Urban, Jack Quaid, Antony Starr, Erin Moriarty, Dominique McElligott, Jessie T. Usher, Chace Crawford, Laz Alonso, Tomer Capone, Karen Fukuhara, and Nathan Mitchell.",
+        "description": "Finding some popular meme templates that you see on The Boys",
         "memesList": [
             {
                 "memeId": 1,
                 "topic": "The Boys",
                 "memeSrc": "theBoysMeme1",
                 "note": "The Boys S3 - Ep.6",
+                "link": "https://www.memestemplates.com/soldier-boy-and-homeland-talk-the-boys-meme-template",
                 
             },
             {
@@ -17,6 +18,31 @@
                 "topic": "The Boys",
                 "memeSrc": "theBoysMeme2",
                 "note": "The Boys S3 - Ep.8",
+                "link": "https://www.memestemplates.com/youre-a-disappointment-the-boys-meme-template",
+            },
+            {
+                "memeId": 3,
+                "topic": "The Boys",
+                "memeSrc": "theBoysMeme3",
+                "note": "",
+                "link": "https://twitter.com/scenesoftheboys/status/1553506862766735367",
+                
+            },
+            {
+                "memeId": 4,
+                "topic": "The Boys",
+                "memeSrc": "theBoysMeme4",
+                "note": "The Boys S3 - Ep.7",
+                "link": "https://knowyourmeme.com/memes/stressed-homelander",
+                
+            },
+            {
+                "memeId": 5,
+                "topic": "The Boys",
+                "memeSrc": "theBoysMeme5",
+                "note": "The Boys S3 - Ep.8",
+                "link": "https://knowyourmeme.com/memes/homelander-gets-applause",
+                
             },
         ]
 
@@ -25,7 +51,7 @@
         "id": 2,
         "title": "Anime",
         "imgSrc": "anime",
-        "description": "Anime (Japanese: アニメ, IPA: [aɲime] (listen)) is a Japanese term for animation. Outside of Japan and in English, anime refers specifically to animation produced in Japan. However, in Japan and in Japanese, anime (a term derived from a shortening of the English word animation) describes all animated works, regardless of style or origin. Animation produced outside of Japan with similar style to Japanese animation is commonly referred to as anime-influenced animation.",
+        "description": "Finding some popular meme templates that you see on Anime",
         
         "memesList": [
             {
@@ -33,12 +59,35 @@
                 "topic": "Anime",
                 "memeSrc": "animeMeme1",
                 "note": "Bokutachi wa Benkyou ga Dekinai",
+                "link": "https://imgflip.com/memetemplate/259561625/anime-meme",
             },
             {
                 "memeId": 2,
                 "topic": "Anime",
                 "memeSrc": "animeMeme2",
                 "note": "Kono Subarashii Sekai ni Shukufuku wo",
+                "link": "https://imgflip.com/memetemplate/200684551/Crying-Aqua-Konosuba",
+            },
+            {
+                "memeId": 3,
+                "topic": "Anime",
+                "memeSrc": "animeMeme3",
+                "note": "Kaguya-Sama Wa Kokurasetai - Tensai-Tachi No Renai Zunousen",
+                "link": "https://imgflip.com/memegenerator/168608670/chika-yes-no",
+            },
+            {
+                "memeId": 4,
+                "topic": "Anime",
+                "memeSrc": "animeMeme4",
+                "note": "Naruto Shippuden",
+                "link": "https://imgflip.com/memegenerator/255214393/Naruto-Handshake-Meme-Template",
+            },
+            {
+                "memeId": 5,
+                "topic": "Anime",
+                "memeSrc": "animeMeme5",
+                "note": "Naruto Shippuden",
+                "link": "https://imgflip.com/memegenerator/285187997/This-world-shall-know-pain",
             },
         ]
     },
@@ -46,19 +95,130 @@
         "id": 3,
         "title": "Basketball",
         "imgSrc": "basketball",
-        "description": "Basketball is a team sport in which two teams, most commonly of five players each, opposing one another on a rectangular court, compete with the primary objective of shooting a basketball (approximately 9.4 inches (24 cm) in diameter) through the defender's hoop (a basket 18 inches (46 cm) in diameter mounted 10 feet (3.048 m) high to a backboard at each end of the court, while preventing the opposing team from shooting through their own hoop. A field goal is worth two points, unless made from behind the three-point line, when it is worth three. After a foul, timed play stops and the player fouled or designated to shoot a technical foul is given one, two or three one-point free throws. The team with the most points at the end of the game wins, but if regulation play expires with the score tied, an additional period of play (overtime) is mandated.",
+        "description": "Finding some popular meme templates about Basketball",
         "memesList": [
             {
                 "memeId": 1,
                 "topic": "Basketball",
                 "memeSrc": "basketballMeme1",
                 "note": "Lebron and Jr.Smith",
+                "link": "https://imgflip.com/memetemplate/140368105/NBA-Finals",
             },
             {
                 "memeId": 2,
                 "topic": "Basketball",
                 "memeSrc": "basketballMeme2",
                 "note": "Stephen.A.Smith",
+                "link": "https://www.pinterest.com/pin/156992737002244360/",
+            },
+            {
+                "memeId": 3,
+                "topic": "Basketball",
+                "memeSrc": "basketballMeme3",
+                "note": "Stephen Curry",
+                "link": "https://imgflip.com/memegenerator/312217833/Marge-Basketball",
+            },
+            {
+                "memeId": 4,
+                "topic": "Basketball",
+                "memeSrc": "basketballMeme4",
+                "note": "Michael Jordan",
+                "link": "https://imgflip.com/memetemplate/113600619/micheal-jordan-meme",
+            },
+            {
+                "memeId": 5,
+                "topic": "Basketball",
+                "memeSrc": "basketballMeme5",
+                "note": "Michael Jordan",
+                "link": "https://imgflip.com/memetemplate/273215098/I-took-that-personally",
+            },
+        ]
+    },
+    
+    {
+        "id": 4,
+        "title": "Movies",
+        "imgSrc": "movie",
+        "description": "Finding some popular meme templates that you see on films",
+        "memesList": [
+            {
+                "memeId": 1,
+                "topic": "Movies",
+                "memeSrc": "movieMeme1",
+                "note": "Padme and Anakin picnic scene - Star wars",
+                "link": "https://imgflip.com/memegenerator/323917653/Padme-and-Anakin-picnic-scene",
+            },
+            {
+                "memeId": 2,
+                "topic": "Movies",
+                "memeSrc": "movieMeme2",
+                "note": "Fast and furious 7 final scene",
+                "link": "https://imgflip.com/memegenerator/251379540/fast-and-furious-7-final-scene",
+            },
+            {
+                "memeId": 3,
+                "topic": "Movies",
+                "memeSrc": "movieMeme3",
+                "note": "HOMER BUSH - The Simpsons",
+                "link": "https://imgflip.com/memegenerator/68927175/HOMER-BUSH",
+            },
+            {
+                "memeId": 4,
+                "topic": "Movies",
+                "memeSrc": "movieMeme4",
+                "note": "You guys always act like you're better than me - Family guy",
+                "link": "https://imgflip.com/memegenerator/170092194/You-Guys-always-act-like-youre-better-than-me",
+            },
+            {
+                "memeId": 5,
+                "topic": "Movies",
+                "memeSrc": "movieMeme5",
+                "note": "Think Mark Think - Invincible",
+                "link": "https://imgflip.com/memegenerator/316678270/Think-Mark-Think",
+            },
+        ]
+    },
+    
+    {
+        "id": 5,
+        "title": "Popular",
+        "imgSrc": "popular",
+        "description": "Finding some popular meme templates that you see on social media everyday",
+        "memesList": [
+            {
+                "memeId": 1,
+                "topic": "Popular",
+                "memeSrc": "popularMeme1",
+                "note": "Drake Hotline Bling",
+                "link": "https://imgflip.com/memetemplate/140368105/NBA-Finals",
+            },
+            {
+                "memeId": 2,
+                "topic": "Popular",
+                "memeSrc": "popularMeme2",
+                "note": "Buff Doge vs. Cheems",
+                "link": "https://imgflip.com/memegenerator/Buff-Doge-vs-Cheems",
+            },
+            {
+                "memeId": 3,
+                "topic": "Popular",
+                "memeSrc": "popularMeme3",
+                "note": "Trade Offer",
+                "link": "https://imgflip.com/memegenerator/309868304/Trade-Offer",
+            },
+            {
+                "memeId": 4,
+                "topic": "Popular",
+                "memeSrc": "popularMeme4",
+                "note": "Roll Safe Think About It",
+                "link": "https://imgflip.com/memegenerator/Roll-Safe-Think-About-It",
+            },
+            {
+                "memeId": 5,
+                "topic": "Popular",
+                "memeSrc": "popularMeme5",
+                "note": "Gus Fring we are not the same",
+                "link": "https://imgflip.com/memegenerator/342785297/Gus-Fring-we-are-not-the-same",
             },
         ]
     },

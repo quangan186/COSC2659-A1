@@ -17,20 +17,16 @@ struct MemeDetails: View {
                     Image(memeTopic.imgSrc).resizable().scaledToFit()
                     Text("\(memeTopic.title)").font(.custom("Montserrat", size: 30)).fontWeight(.semibold)
                 Text("\(memeTopic.description)").font(.custom("Montserrat", size: 16)).padding(.horizontal).fixedSize(horizontal: false, vertical: true).lineSpacing(12)
+                Text("Meme templates").font(.custom("Montserrat", size: 30)).fontWeight(.semibold).padding()
                 ForEach(memeTopic.memesList.filter({ (meme) -> Bool in
                     return meme.topic == memeTopic.title}), id: \.memeId){ item in
-                    Image(item.memeSrc).resizable().scaledToFill()
-                        Text(item.note).font(.custom("Montserrat", size: 16))
-//                        Button("Download Template"){
-//                            let imageSaver = ImageSaver()
-//                            imageSaver.saveImage(image: item.memeSrc.convertStringtoImage()!)
-//                        }.padding().background(Color("lightBlue")).foregroundColor(.white).cornerRadius(15)
+                        Image(item.memeSrc).resizable().scaledToFill().padding(.top)
+                        Text(item.note).font(.custom("Montserrat", size: 16)).padding(.horizontal)
+                    Link(destination: URL(string: item.link)!, label: {
+                        Text("Link to the template")
+                    }).padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/).background(Color("lightBlue")).foregroundColor(.white).cornerRadius(15)
                     
                 }
-                    Spacer()
-                Button("Download all \(Image(systemName:"square.and.arrow.down"))"){
-                    
-                }.padding().background(Color("lightBlue")).foregroundColor(.white).cornerRadius(15)
             }.frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top).padding(.bottom)
             }
     }

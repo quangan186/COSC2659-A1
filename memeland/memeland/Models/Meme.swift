@@ -15,7 +15,7 @@ struct MemeTopic :Identifiable, Codable{
 
 struct MemeItem: Codable{
     var memeId: Int
-    var topic, memeSrc, note: String
+    var topic, memeSrc, note, link: String
 }
 
 

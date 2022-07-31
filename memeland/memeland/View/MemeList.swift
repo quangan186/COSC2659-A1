@@ -8,14 +8,36 @@
 import SwiftUI
 
 struct MemeList: View {
-    let memes = decodeFromJsonTopicFile(fileName: "memes.json")
+    @State var memes = decodeFromJsonTopicFile(fileName: "memes.json")
+    @State var isSorted = false
     @State private var searchTopic = ""
     var body: some View {
-        List(searchResults) { meme in
-            NavigationLink(destination: MemeDetails(memeTopic: meme)){
-                MemeRow(meme: meme)
+        VStack(){
+            HStack{
+                Spacer()
+                if (isSorted){
+                    Button("Sort Z-A"){
+                        memes = memes.sorted(by: {$0.title > $1.title})
+                        isSorted = false
+                    }
+                    .padding(.trailing)
+                }
+                else{
+                    Button("Sort A-Z"){
+                        memes = memes.sorted(by: {$0.title < $1.title})
+                        isSorted = true
+                    }
+                    .padding(.trailing)
+                }
             }
-        }.searchable(text: $searchTopic, prompt: "Search").navigationTitle("Meme list").navigationBarTitleDisplayMode(.inline)
+            
+            List(searchResults) { meme in
+                NavigationLink(destination: MemeDetails(memeTopic: meme)){
+                    MemeRow(meme: meme)
+                }
+            }.searchable(text: $searchTopic, prompt: "Search").navigationTitle("Meme list").navigationBarTitleDisplayMode(.inline)
+        }
+        
     }
     
     var searchResults: [MemeTopic]{
@@ -36,6 +58,9 @@ struct MemeList_Previews: PreviewProvider {
 struct MemeRow: View{
     var meme: MemeTopic
     var body: some View {
-        Text("\(meme.title)")
+        HStack(spacing: 10){
+            Image(meme.imgSrc).resizable().frame(width: 80, height: 50)
+            Text("\(meme.title)")
+        }
     }
 }
