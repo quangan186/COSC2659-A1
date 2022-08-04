@@ -23,7 +23,7 @@ struct Home: View {
                         
                         Text("Find your favorite meme templates here")
                             .font(.custom("Montserrat-Regular", size: 16)).fontWeight(.regular).foregroundColor(Color.white).frame(maxWidth: .infinity).padding(.vertical)
-                        
+                        // Button uses to go to the list
                         NavigationLink(destination: MemeList(), label: {
                             Text("Get started").font(.title3).fontWeight(.semibold).padding([.top, .leading, .bottom])
                             Image(systemName: "arrow.right")

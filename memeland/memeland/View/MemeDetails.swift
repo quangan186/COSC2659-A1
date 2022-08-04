@@ -22,10 +22,12 @@ struct MemeDetails: View {
                 Text("\(memeTopic.title)").font(.custom("Montserrat", size: 30)).fontWeight(.semibold)
                 Text("\(memeTopic.description)").font(.custom("Montserrat", size: 16)).padding(.horizontal).fixedSize(horizontal: false, vertical: true).lineSpacing(12)
                 Text("Meme templates").font(.custom("Montserrat", size: 30)).fontWeight(.semibold).padding()
+                // Render templates in the json file
                 ForEach(memeTopic.memesList.filter({ (meme) -> Bool in
                     return meme.topic == memeTopic.title}), id: \.memeId){ item in
                         Image(item.memeSrc).resizable().scaledToFill().padding(.top)
                         Text(item.note).font(.custom("Montserrat", size: 16)).multilineTextAlignment(.center).padding(.horizontal)
+                    // Button directing to the source of the template
                     Link(destination: URL(string: item.link)!, label: {
                         Text("Link to the template")
                     }).padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/).background(Color("lightBlue")).foregroundColor(.white).cornerRadius(15)

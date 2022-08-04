@@ -35,7 +35,7 @@ struct MemeList: View {
                     .padding(.trailing)
                 }
             }
-            
+            // Render topics in the json file based on the search
             List(searchResults) { meme in
                 NavigationLink(destination: MemeDetails(memeTopic: meme)){
                     MemeRow(meme: meme)
@@ -45,6 +45,7 @@ struct MemeList: View {
         
     }
     
+    // check the search input, if the input is empty, the list will show all topics. Otherwise, it will render the topics which contain the input
     var searchResults: [MemeTopic]{
         if searchTopic.isEmpty {
             return memes
@@ -64,6 +65,7 @@ struct MemeRow: View{
     var meme: MemeTopic
     var body: some View {
         HStack(spacing: 10){
+            // The structure of a row in the list
             Image(meme.imgSrc).resizable().frame(width: 80, height: 50)
             Text("\(meme.title)")
         }
