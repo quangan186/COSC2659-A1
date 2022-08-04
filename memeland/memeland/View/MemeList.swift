@@ -1,10 +1,14 @@
-//
-//  MemeList.swift
-//  memeland
-//
-//  Created by Bui Quang An on 22/07/2022.
-//
-
+/*
+  RMIT University Vietnam
+  Course: COSC2659 iOS Development
+  Semester: 2022B
+  Assessment: Assignment 1
+  Author: Bui Quang An
+  ID: 3877482
+  Created  date: 22/07/2022
+  Last modified: 04/08/2022
+  Acknowledgement: Hacking with swift
+*/
 import SwiftUI
 
 struct MemeList: View {
@@ -14,6 +18,7 @@ struct MemeList: View {
     var body: some View {
         VStack(){
             HStack{
+                Text("Topics(\(memes.count))").padding(.horizontal)
                 Spacer()
                 if (isSorted){
                     Button("Sort Z-A"){
@@ -44,7 +49,7 @@ struct MemeList: View {
         if searchTopic.isEmpty {
             return memes
         }else{
-            return memes.filter({(item) -> Bool in return item.title == searchTopic})
+            return memes.filter({$0.title.contains(searchTopic)})
         }
     }
 }
